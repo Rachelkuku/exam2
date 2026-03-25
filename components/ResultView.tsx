@@ -77,8 +77,11 @@ export default function ResultView({ exam }: ResultViewProps) {
             <h2>내 답안과 정답 비교</h2>
           </div>
           <div className="section-heading__actions">
+            <Link className="button button--ghost" href="/wrong-notes">
+              전체 오답노트
+            </Link>
             <Link className="button button--ghost" href={`/exam/${exam.examId}/wrong`}>
-              오답노트
+              이 시험 오답노트
             </Link>
             <button type="button" className="button button--accent" onClick={handleRetry}>
               다시 풀기
@@ -92,12 +95,12 @@ export default function ResultView({ exam }: ResultViewProps) {
               <div className="result-row__main">
                 <div className="result-row__title">
                   <span className={`badge ${result.isCorrect ? "badge--correct" : "badge--wrong"}`}>
-                    {result.isCorrect ? "맞음" : "틀림"}
+                    {result.isCorrect ? "맞음" : "오답"}
                   </span>
                   <strong>{result.question.number}번</strong>
                   <span className="muted">{result.question.subject}</span>
                 </div>
-                <p>{result.question.question}</p>
+                <p className="result-row__question">{result.question.question}</p>
                 {result.note ? (
                   <div className="note-preview">
                     <strong>내 메모</strong>

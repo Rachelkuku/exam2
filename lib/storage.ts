@@ -50,6 +50,28 @@ export function readSubmission(examId: string) {
   return readJson<ExamSubmission | null>(getSubmissionStorageKey(examId), null);
 }
 
+export function readAllSubmissions() {
+  if (typeof window === "undefined") {
+    return [];
+  }
+
+  const submissions: ExamSubmission[] = [];
+
+  for (const key of Object.keys(window.localStorage)) {
+    if (!key.startsWith("accounting-bank:submission:")) {
+      continue;
+    }
+
+    const submission = readJson<ExamSubmission | null>(key, null);
+
+    if (submission) {
+      submissions.push(submission);
+    }
+  }
+
+  return submissions.sort((left, right) => right.submittedAt.localeCompare(left.submittedAt));
+}
+
 export function writeSubmission(submission: ExamSubmission) {
   window.localStorage.setItem(
     getSubmissionStorageKey(submission.examId),

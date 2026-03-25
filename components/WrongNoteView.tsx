@@ -15,7 +15,7 @@ export default function WrongNoteView({ exam }: WrongNoteViewProps) {
   const [submission] = useState(() => readSubmission(exam.examId));
   const wrongResults = useMemo(() => {
     return gradeExam(exam, submission?.answers ?? {}, submission?.notes ?? {}).results.filter(
-      (result) => !result.isCorrect,
+      (result) => result.selectedAnswer !== undefined && !result.isCorrect,
     );
   }, [exam, submission]);
 
@@ -46,11 +46,12 @@ export default function WrongNoteView({ exam }: WrongNoteViewProps) {
           <p className="eyebrow">오답노트</p>
           <h1 className="hero__title--exam">{exam.examTitle}</h1>
           <p className="hero__body">
-            틀린 문제만 모아서 다시 확인하고, 상세 화면에서 해설 요청용 복사를 할 수 있습니다.
+            이 시험에서 틀린 문제만 모았습니다. 문제 상세에서 메모와 정답을 다시 확인할 수 있습니다.
           </p>
         </div>
         <div className="hero__meta">
           <span>오답 {wrongResults.length}개</span>
+          <Link href="/wrong-notes">전체 오답노트</Link>
           <Link href={`/exam/${exam.examId}/result`}>결과 화면으로</Link>
         </div>
       </section>

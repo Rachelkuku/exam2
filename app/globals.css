@@ -426,7 +426,6 @@ a {
 
 .submit-box p,
 .empty-inline p,
-.result-row__main p,
 .empty-state p {
   color: var(--muted);
   line-height: 1.65;
@@ -525,6 +524,13 @@ a {
 .result-row__main {
   display: grid;
   gap: 10px;
+}
+
+.result-row__question {
+  color: var(--text);
+  line-height: 1.72;
+  font-size: 0.98rem;
+  white-space: pre-wrap;
 }
 
 .result-row__meta {

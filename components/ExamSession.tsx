@@ -33,6 +33,19 @@ export default function ExamSession({ exam }: ExamSessionProps) {
     writeDraftNotes(exam.examId, notes);
   }, [exam.examId, notes]);
 
+  useEffect(() => {
+    if (Object.keys(answers).length === 0 && Object.keys(notes).length === 0) {
+      return;
+    }
+
+    writeSubmission({
+      examId: exam.examId,
+      answers,
+      notes,
+      submittedAt: new Date().toISOString(),
+    });
+  }, [answers, exam.examId, notes]);
+
   const currentQuestion = exam.questions[currentIndex];
   const selectedAnswer = answers[currentQuestion.id];
   const currentNote = notes[currentQuestion.id] ?? "";

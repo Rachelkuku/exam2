@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ExamCard from "@/components/ExamCard";
 import { getAllExams } from "@/lib/exam";
 
@@ -22,6 +23,11 @@ export default function Home() {
           <div>
             <p className="eyebrow">시험 선택</p>
             <h2>풀고 싶은 회차를 고르세요</h2>
+          </div>
+          <div className="section-heading__actions">
+            <Link className="button button--ghost" href="/wrong-notes">
+              전체 오답노트
+            </Link>
           </div>
         </div>
         <div className="exam-grid">
