@@ -7,6 +7,7 @@ import ProgressBar from "@/components/ProgressBar";
 import QuestionCard from "@/components/QuestionCard";
 import { formatChoice } from "@/lib/format";
 import {
+  appendSubmissionHistory,
   readDraftAnswers,
   readDraftNotes,
   writeDraftAnswers,
@@ -67,12 +68,15 @@ export default function ExamSession({ exam }: ExamSessionProps) {
   }
 
   function handleSubmit() {
-    writeSubmission({
+    const submission = {
       examId: exam.examId,
       answers,
       notes,
       submittedAt: new Date().toISOString(),
-    });
+    };
+
+    writeSubmission(submission);
+    appendSubmissionHistory(submission);
     router.push(`/exam/${exam.examId}/result`);
   }
 

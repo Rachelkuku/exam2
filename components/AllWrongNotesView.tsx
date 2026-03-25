@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import ChoiceList from "@/components/ChoiceList";
 import { gradeExam } from "@/lib/grading";
 import { formatChoice } from "@/lib/format";
-import { readAllSubmissions } from "@/lib/storage";
-import type { Exam, QuestionResult } from "@/types/exam";
+import { getSubmissionsUpdatedEventName, readAllSubmissions } from "@/lib/storage";
+import type { Exam, ExamSubmission, QuestionResult } from "@/types/exam";
 
 type AllWrongNotesViewProps = {
   exams: Exam[];
@@ -30,7 +30,26 @@ export default function AllWrongNotesView({ exams }: AllWrongNotesViewProps) {
   const [retryMode, setRetryMode] = useState(false);
   const [retryAnswers, setRetryAnswers] = useState<RetryAnswerMap>({});
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [submissions] = useState(() => readAllSubmissions());
+  const [submissions, setSubmissions] = useState<ExamSubmission[]>([]);
+
+  useEffect(() => {
+    const submissionsUpdatedEventName = getSubmissionsUpdatedEventName();
+
+    function syncSubmissions() {
+      setSubmissions(readAllSubmissions());
+    }
+
+    syncSubmissions();
+    window.addEventListener("focus", syncSubmissions);
+    window.addEventListener("storage", syncSubmissions);
+    window.addEventListener(submissionsUpdatedEventName, syncSubmissions);
+
+    return () => {
+      window.removeEventListener("focus", syncSubmissions);
+      window.removeEventListener("storage", syncSubmissions);
+      window.removeEventListener(submissionsUpdatedEventName, syncSubmissions);
+    };
+  }, []);
 
   const reviewItems = useMemo(() => {
     const counts = new Map<string, number>();
