@@ -1,4 +1,5 @@
 import type { Question } from "@/types/exam";
+import { formatChoiceText } from "@/lib/format";
 
 type ChoiceListProps = {
   question: Question;
@@ -31,7 +32,7 @@ export default function ChoiceList({
           >
             <span className="choice__number">{choiceNumber}</span>
             <div className="choice__body">
-              <span>{choice}</span>
+              <span>{formatChoiceText(choice)}</span>
               <div className="choice__tags">
                 {isSelected ? <span className="tag">내 답</span> : null}
                 {isAnswer ? <span className="tag tag--answer">정답</span> : null}
@@ -46,7 +47,7 @@ export default function ChoiceList({
             onClick={() => onSelect?.(choiceNumber)}
           >
             <span className="choice__number">{choiceNumber}</span>
-            <span>{choice}</span>
+            <span>{formatChoiceText(choice)}</span>
           </button>
         );
       })}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { formatChoice } from "@/lib/format";
+import { formatChoiceWithText } from "@/lib/format";
 import type { QuestionResult } from "@/types/exam";
 
 type WrongQuestionListProps = {
@@ -12,7 +12,7 @@ export default function WrongQuestionList({ examId, results }: WrongQuestionList
     return (
       <div className="empty-inline">
         <strong>틀린 문제가 없습니다.</strong>
-        <p>이번 시험은 모두 맞았습니다. 다른 시험을 고르거나 다시 도전해보세요.</p>
+        <p>이번 시험은 모두 맞았습니다. 다른 시험을 풀거나 다시 복습해보세요.</p>
       </div>
     );
   }
@@ -36,8 +36,8 @@ export default function WrongQuestionList({ examId, results }: WrongQuestionList
             ) : null}
           </div>
           <div className="result-row__meta">
-            <span>내 답 {formatChoice(result.selectedAnswer)}</span>
-            <span>정답 {formatChoice(result.question.answer)}</span>
+            <span>내 답 {formatChoiceWithText(result.question.choices, result.selectedAnswer)}</span>
+            <span>정답 {formatChoiceWithText(result.question.choices, result.question.answer)}</span>
             <Link href={`/exam/${examId}/question/${result.question.id}`}>상세 보기</Link>
           </div>
         </article>

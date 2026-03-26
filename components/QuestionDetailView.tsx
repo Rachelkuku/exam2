@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import ChoiceList from "@/components/ChoiceList";
 import CopyExplanationButton from "@/components/CopyExplanationButton";
-import { formatChoice } from "@/lib/format";
+import { formatChoiceWithText } from "@/lib/format";
 import { gradeExam } from "@/lib/grading";
 import { readSubmission } from "@/lib/storage";
 import type { Exam, Question } from "@/types/exam";
@@ -29,7 +29,7 @@ export default function QuestionDetailView({ exam, question }: QuestionDetailVie
           <p className="eyebrow">문제 상세</p>
           <h1 className="hero__title--exam">{exam.examTitle}</h1>
           <p className="hero__body">
-            {question.number}번 문제의 정답, 내가 고른 답, 저장한 메모를 다시 확인합니다.
+            {question.number}번 문제의 정답, 내가 고른 답, 메모를 다시 확인합니다.
           </p>
         </div>
         <div className="hero__meta">
@@ -68,11 +68,11 @@ export default function QuestionDetailView({ exam, question }: QuestionDetailVie
         <div className="detail-grid">
           <article className="detail-card">
             <span>내가 고른 답</span>
-            <strong>{formatChoice(result?.selectedAnswer)}</strong>
+            <strong>{formatChoiceWithText(question.choices, result?.selectedAnswer)}</strong>
           </article>
           <article className="detail-card">
             <span>정답</span>
-            <strong>{formatChoice(question.answer)}</strong>
+            <strong>{formatChoiceWithText(question.choices, question.answer)}</strong>
           </article>
         </div>
 

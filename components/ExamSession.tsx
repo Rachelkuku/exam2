@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import ProgressBar from "@/components/ProgressBar";
 import QuestionCard from "@/components/QuestionCard";
-import { formatChoice } from "@/lib/format";
+import { formatChoiceWithText } from "@/lib/format";
 import {
   appendSubmissionHistory,
   readDraftAnswers,
@@ -87,7 +87,7 @@ export default function ExamSession({ exam }: ExamSessionProps) {
           <p className="eyebrow">문제 풀이</p>
           <h1 className="hero__title--exam">{exam.examTitle}</h1>
           <p className="hero__body">
-            한 문제씩 답을 고르면 바로 정답을 보여줍니다. 확인한 뒤 다음 문제로 넘어가세요.
+            선지를 고르면 바로 정답 여부가 보입니다. 확인한 뒤 다음 문제로 넘어가세요.
           </p>
         </div>
         <div className="hero__meta">
@@ -95,7 +95,7 @@ export default function ExamSession({ exam }: ExamSessionProps) {
             {currentIndex + 1} / {exam.questions.length}문제
           </span>
           <span>응답 {answeredCount}개</span>
-          <span>남은 문제 {unansweredCount}개</span>
+          <span>미응답 {unansweredCount}개</span>
         </div>
       </section>
 
@@ -131,8 +131,8 @@ export default function ExamSession({ exam }: ExamSessionProps) {
           <div className={`submit-box ${isCorrect ? "submit-box--correct" : "submit-box--wrong"}`}>
             <strong>{isCorrect ? "정답입니다." : "오답입니다."}</strong>
             <p>
-              내가 고른 답은 {formatChoice(selectedAnswer)}이고, 정답은{" "}
-              {formatChoice(currentQuestion.answer)}입니다.
+              내가 고른 답은 {formatChoiceWithText(currentQuestion.choices, selectedAnswer)}이고,
+              정답은 {formatChoiceWithText(currentQuestion.choices, currentQuestion.answer)}입니다.
             </p>
           </div>
         ) : (

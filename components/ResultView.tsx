@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import ResultSummary from "@/components/ResultSummary";
-import { formatChoice } from "@/lib/format";
+import { formatChoiceWithText } from "@/lib/format";
 import { gradeExam } from "@/lib/grading";
 import { clearExamStorage, readSubmission } from "@/lib/storage";
 import type { Exam } from "@/types/exam";
@@ -31,11 +31,11 @@ export default function ResultView({ exam }: ResultViewProps) {
       <div className="shell">
         <section className="empty-state">
           <p className="eyebrow">결과 없음</p>
-          <h1>제출된 기록을 찾지 못했습니다.</h1>
-          <p>먼저 시험을 풀고 제출하면 채점 결과와 오답노트를 확인할 수 있습니다.</p>
+          <h1>제출한 기록을 찾지 못했습니다.</h1>
+          <p>먼저 시험을 끝까지 풀고 제출하면 채점 결과와 오답노트를 볼 수 있습니다.</p>
           <div className="empty-state__actions">
             <Link className="button button--accent" href={`/exam/${exam.examId}`}>
-              시험 풀러 가기
+              시험 풀기
             </Link>
             <Link className="button button--ghost" href="/">
               홈으로
@@ -74,14 +74,14 @@ export default function ResultView({ exam }: ResultViewProps) {
         <div className="section-heading">
           <div>
             <p className="eyebrow">문제별 결과</p>
-            <h2>내 답안과 정답 비교</h2>
+            <h2>내 답과 정답 비교</h2>
           </div>
           <div className="section-heading__actions">
             <Link className="button button--ghost" href="/wrong-notes">
               전체 오답노트
             </Link>
             <Link className="button button--ghost" href={`/exam/${exam.examId}/wrong`}>
-              이 시험 오답노트
+              이번 시험 오답노트
             </Link>
             <button type="button" className="button button--accent" onClick={handleRetry}>
               다시 풀기
@@ -109,8 +109,8 @@ export default function ResultView({ exam }: ResultViewProps) {
                 ) : null}
               </div>
               <div className="result-row__meta">
-                <span>내 답 {formatChoice(result.selectedAnswer)}</span>
-                <span>정답 {formatChoice(result.question.answer)}</span>
+                <span>내 답 {formatChoiceWithText(result.question.choices, result.selectedAnswer)}</span>
+                <span>정답 {formatChoiceWithText(result.question.choices, result.question.answer)}</span>
                 <Link href={`/exam/${exam.examId}/question/${result.question.id}`}>상세 보기</Link>
               </div>
             </article>
