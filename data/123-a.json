@@ -15,7 +15,8 @@
         "거래의 이중성 / 대차평균의 원리",
         "대차평균의 원리 / 거래의 이중성"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/123-a/123-a-1.png"
     },
     {
       "id": "123-a-2",
@@ -41,7 +42,8 @@
         "520,000원",
         "600,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/123-a/123-a-3.png"
     },
     {
       "id": "123-a-4",
@@ -106,7 +108,8 @@
         "440,000원",
         "3,600,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/123-a/123-a-8.png"
     },
     {
       "id": "123-a-9",

@@ -3,6 +3,7 @@ export type Question = {
   number: number;
   subject: string;
   question: string;
+  figureImage?: string;
   choices: string[];
   answer: number;
 };

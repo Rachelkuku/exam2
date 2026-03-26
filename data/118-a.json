@@ -67,7 +67,8 @@
         "60,000원",
         "100,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/118-a/118-a-5.png"
     },
     {
       "id": "118-a-6",
@@ -80,7 +81,8 @@
         "나, 라",
         "다, 라"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/118-a/118-a-6.png"
     },
     {
       "id": "118-a-7",
@@ -171,7 +173,8 @@
         "원재료",
         "외주가공비"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/118-a/118-a-13.png"
     },
     {
       "id": "118-a-14",
@@ -184,7 +187,8 @@
         "2,200,000원",
         "2,350,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/118-a/118-a-14.png"
     },
     {
       "id": "118-a-15",

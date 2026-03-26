@@ -67,7 +67,8 @@
         "220,000원",
         "240,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/99-a/99-a-5.png"
     },
     {
       "id": "99-a-6",
@@ -145,7 +146,8 @@
         "950,000원",
         "1,120,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/99-a/99-a-11.png"
     },
     {
       "id": "99-a-12",
@@ -184,7 +186,8 @@
         "과소계상 과대계상",
         "과대계상 과대계상"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/99-a/99-a-14.png"
     },
     {
       "id": "99-a-15",
@@ -197,7 +200,8 @@
         "당기분 이자비용은 500,000원이다.",
         "차기로 이월되는 이자비용은 500,000원이다."
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/99-a/99-a-15.png"
     }
   ]
 }

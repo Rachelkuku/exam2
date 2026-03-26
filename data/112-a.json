@@ -28,7 +28,8 @@
         "210,000원",
         "360,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/112-a/112-a-2.png"
     },
     {
       "id": "112-a-3",
@@ -130,7 +131,8 @@
         "200,000원",
         "795,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/112-a/112-a-10.png"
     },
     {
       "id": "112-a-11",
@@ -154,7 +156,8 @@
         "800,000원",
         "1,100,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/112-a/112-a-12.png"
     },
     {
       "id": "112-a-13",
@@ -193,7 +196,8 @@
         "선급금",
         "외상매출금"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/112-a/112-a-15.png"
     }
   ]
 }

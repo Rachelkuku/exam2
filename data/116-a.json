@@ -65,7 +65,8 @@
         "210,000원",
         "290,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/116-a/116-a-5.png"
     },
     {
       "id": "116-a-6",
@@ -169,7 +170,8 @@
         "305,000원",
         "319,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/116-a/116-a-13.png"
     },
     {
       "id": "116-a-14",
@@ -182,7 +184,8 @@
         "미지급비용",
         "선급금"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/116-a/116-a-14.png"
     },
     {
       "id": "116-a-15",
@@ -195,7 +198,8 @@
         "1,700,000원",
         "2,200,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/116-a/116-a-15.png"
     }
   ]
 }

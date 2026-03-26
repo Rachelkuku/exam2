@@ -58,6 +58,16 @@ export default function QuestionDetailView({ exam, question }: QuestionDetailVie
           </div>
         </div>
 
+        {question.figureImage ? (
+          <div className="question-figure">
+            <img
+              className="question-figure__image"
+              src={question.figureImage}
+              alt={`${question.number}번 문제 표 이미지`}
+            />
+          </div>
+        ) : null}
+
         <ChoiceList
           question={question}
           selectedAnswer={result?.selectedAnswer}

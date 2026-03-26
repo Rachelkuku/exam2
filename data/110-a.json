@@ -54,7 +54,8 @@
         "광고선전비",
         "미수금"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/110-a/110-a-4.png"
     },
     {
       "id": "110-a-5",
@@ -93,7 +94,8 @@
         "개인적 용도 / 법인기업 / 자산 계정",
         "사업적 용도 / 개인기업 / 자산 계정"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/110-a/110-a-7.png"
     },
     {
       "id": "110-a-8",
@@ -132,7 +134,8 @@
         "330,000원",
         "390,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/110-a/110-a-10.png"
     },
     {
       "id": "110-a-11",
@@ -145,7 +148,8 @@
         "4,000원",
         "6,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/110-a/110-a-11.png"
     },
     {
       "id": "110-a-12",

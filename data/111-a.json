@@ -28,7 +28,8 @@
         "보험차익",
         "퇴직급여"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/111-a/111-a-2.png"
     },
     {
       "id": "111-a-3",
@@ -93,7 +94,8 @@
         "복리후생비",
         "세금과공과"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/111-a/111-a-7.png"
     },
     {
       "id": "111-a-8",
@@ -119,7 +121,8 @@
         "3개",
         "4개"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/111-a/111-a-9.png"
     },
     {
       "id": "111-a-10",
@@ -132,7 +135,8 @@
         "판매비와관리비는 130,000원이다.",
         "당기순이익은 10,000원이다."
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/111-a/111-a-10.png"
     },
     {
       "id": "111-a-11",
@@ -184,7 +188,8 @@
         "100,000원",
         "110,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/111-a/111-a-14.png"
     },
     {
       "id": "111-a-15",

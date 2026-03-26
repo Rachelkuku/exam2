@@ -119,7 +119,8 @@
         "ㄴ, ㄷ",
         "ㄷ, ㄹ"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/121-a/121-a-9.png"
     },
     {
       "id": "121-a-10",
@@ -171,7 +172,8 @@
         "잡손실 / 20,000원",
         "이자비용 / 20,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/121-a/121-a-13.png"
     },
     {
       "id": "121-a-14",

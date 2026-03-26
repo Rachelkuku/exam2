@@ -28,7 +28,8 @@
         "일정 기간 / 일정 기간",
         "일정 기간 / 일정 시점"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/120-a/120-a-2.png"
     },
     {
       "id": "120-a-3",
@@ -54,7 +55,8 @@
         "미지급금 / 지급어음",
         "미지급금 / 미지급금"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/120-a/120-a-4.png"
     },
     {
       "id": "120-a-5",
@@ -67,7 +69,8 @@
         "300,000원",
         "350,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/120-a/120-a-5.png"
     },
     {
       "id": "120-a-6",

@@ -67,7 +67,8 @@
         "2,000,000원",
         "2,200,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/107-a/107-a-5.png"
     },
     {
       "id": "107-a-6",
@@ -132,7 +133,8 @@
         "외상매출금",
         "선수금"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/107-a/107-a-10.png"
     },
     {
       "id": "107-a-11",
@@ -169,7 +171,8 @@
         "3개월",
         "6개월"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/107-a/107-a-13.png"
     },
     {
       "id": "107-a-14",
@@ -182,7 +185,8 @@
         "총평균법",
         "개별법"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/107-a/107-a-14.png"
     },
     {
       "id": "107-a-15",

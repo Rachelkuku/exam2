@@ -15,7 +15,8 @@
         "차변 / 대변",
         "대변 / 차변"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/114-a/114-a-1.png"
     },
     {
       "id": "114-a-2",
@@ -28,7 +29,8 @@
         "현금과부족",
         "현금"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/114-a/114-a-2.png"
     },
     {
       "id": "114-a-3",
@@ -54,7 +56,8 @@
         "500,000원",
         "600,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/114-a/114-a-4.png"
     },
     {
       "id": "114-a-5",
@@ -67,7 +70,8 @@
         "선입선출법",
         "후입선출법"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/114-a/114-a-5.png"
     },
     {
       "id": "114-a-6",
@@ -93,7 +97,8 @@
         "1,800,000원",
         "2,000,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/114-a/114-a-7.png"
     },
     {
       "id": "114-a-8",
@@ -132,7 +137,8 @@
         "선수수익 / 미수수익",
         "선급금 / 미수수익"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/114-a/114-a-10.png"
     },
     {
       "id": "114-a-11",
@@ -184,7 +190,8 @@
         "570,000원",
         "600,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/114-a/114-a-14.png"
     },
     {
       "id": "114-a-15",
@@ -197,7 +204,8 @@
         "1,000,000원",
         "1,100,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/114-a/114-a-15.png"
     }
   ]
 }

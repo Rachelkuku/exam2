@@ -41,7 +41,8 @@
         "ㄴ, ㄷ",
         "ㄷ, ㄹ"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/119-a/119-a-3.png"
     },
     {
       "id": "119-a-4",
@@ -145,7 +146,8 @@
         "500,000원",
         "580,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/119-a/119-a-11.png"
     },
     {
       "id": "119-a-12",
@@ -158,7 +160,8 @@
         "410,000원",
         "510,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/119-a/119-a-12.png"
     },
     {
       "id": "119-a-13",

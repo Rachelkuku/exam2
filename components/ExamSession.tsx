@@ -87,7 +87,7 @@ export default function ExamSession({ exam }: ExamSessionProps) {
           <p className="eyebrow">문제 풀이</p>
           <h1 className="hero__title--exam">{exam.examTitle}</h1>
           <p className="hero__body">
-            선지를 고르면 바로 정답 여부가 보입니다. 확인한 뒤 다음 문제로 넘어가세요.
+            선택하면 바로 정답 여부가 보입니다. 확인한 뒤 다음 문제로 넘어가면 됩니다.
           </p>
         </div>
         <div className="hero__meta">
@@ -138,7 +138,7 @@ export default function ExamSession({ exam }: ExamSessionProps) {
         ) : (
           <div className="submit-box">
             <strong>답안을 선택하세요.</strong>
-            <p>선택 즉시 정답과 오답 여부가 표시됩니다.</p>
+            <p>선택 즉시 정답 여부가 표시됩니다.</p>
           </div>
         )}
 

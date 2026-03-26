@@ -54,7 +54,8 @@
         "가, 다, 라",
         "가, 나, 다, 라"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/106-a/106-a-4.png"
     },
     {
       "id": "106-a-5",
@@ -67,7 +68,8 @@
         "140,000원 720,000원",
         "850,000원 720,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/106-a/106-a-5.png"
     },
     {
       "id": "106-a-6",
@@ -93,7 +95,8 @@
         "상품 운반을 위한 차량운반구",
         "상품 판매를 위한 상가에 설치한 시스템에어컨"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/106-a/106-a-7.png"
     },
     {
       "id": "106-a-8",
@@ -158,7 +161,8 @@
         "3,600,000원",
         "4,500,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/106-a/106-a-12.png"
     },
     {
       "id": "106-a-13",
@@ -184,7 +188,8 @@
         "차기의 기초자본금은 2,900,000원이다.",
         "결산일 자본금 원장은 손익 2,000,000원으로 마감되었다."
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/106-a/106-a-14.png"
     },
     {
       "id": "106-a-15",

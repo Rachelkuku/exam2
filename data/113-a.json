@@ -80,7 +80,8 @@
         "1,200,000원",
         "1,600,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/113-a/113-a-6.png"
     },
     {
       "id": "113-a-7",
@@ -117,7 +118,8 @@
         "10,000원",
         "15,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/113-a/113-a-9.png"
     },
     {
       "id": "113-a-10",
@@ -130,7 +132,8 @@
         "150,000원",
         "180,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/113-a/113-a-10.png"
     },
     {
       "id": "113-a-11",
@@ -195,7 +198,8 @@
         "1,000,000원",
         "1,040,000원"
       ],
-      "answer": 4
+      "answer": 4,
+      "figureImage": "/question-figures/113-a/113-a-15.png"
     }
   ]
 }

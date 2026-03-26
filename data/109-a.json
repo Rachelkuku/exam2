@@ -54,7 +54,8 @@
         "49,000원",
         "52,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/109-a/109-a-4.png"
     },
     {
       "id": "109-a-5",
@@ -80,7 +81,8 @@
         "다, 라",
         "가, 라"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/109-a/109-a-6.png"
     },
     {
       "id": "109-a-7",
@@ -106,7 +108,8 @@
         "3,700,000원",
         "4,000,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/109-a/109-a-8.png"
     },
     {
       "id": "109-a-9",
@@ -119,7 +122,8 @@
         "250,000원",
         "320,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/109-a/109-a-9.png"
     },
     {
       "id": "109-a-10",
@@ -145,7 +149,8 @@
         "가, 라",
         "다, 라"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/109-a/109-a-11.png"
     },
     {
       "id": "109-a-12",
@@ -171,7 +176,8 @@
         "11,700,000원",
         "16,700,000원"
       ],
-      "answer": 2
+      "answer": 2,
+      "figureImage": "/question-figures/109-a/109-a-13.png"
     },
     {
       "id": "109-a-14",

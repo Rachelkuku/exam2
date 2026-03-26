@@ -67,7 +67,8 @@
         "250,000원",
         "300,000원"
       ],
-      "answer": 1
+      "answer": 1,
+      "figureImage": "/question-figures/104-a/104-a-5.png"
     },
     {
       "id": "104-a-6",
@@ -171,7 +172,8 @@
         "15,000,000원",
         "20,000,000원"
       ],
-      "answer": 3
+      "answer": 3,
+      "figureImage": "/question-figures/104-a/104-a-13.png"
     },
     {
       "id": "104-a-14",

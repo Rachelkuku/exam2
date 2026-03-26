@@ -1,5 +1,5 @@
-import type { Question } from "@/types/exam";
 import ChoiceList from "@/components/ChoiceList";
+import type { Question } from "@/types/exam";
 
 type QuestionCardProps = {
   question: Question;
@@ -21,6 +21,15 @@ export default function QuestionCard({
         <span className="muted">{question.number}번</span>
       </div>
       <h2>{question.question}</h2>
+      {question.figureImage ? (
+        <div className="question-figure">
+          <img
+            className="question-figure__image"
+            src={question.figureImage}
+            alt={`${question.number}번 문제 표 이미지`}
+          />
+        </div>
+      ) : null}
       <ChoiceList
         question={question}
         selectedAnswer={selectedAnswer}

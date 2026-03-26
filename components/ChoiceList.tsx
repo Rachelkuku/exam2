@@ -1,5 +1,5 @@
-import type { Question } from "@/types/exam";
 import { formatChoiceText } from "@/lib/format";
+import type { Question } from "@/types/exam";
 
 type ChoiceListProps = {
   question: Question;
